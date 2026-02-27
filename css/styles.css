@@ -596,29 +596,48 @@ body {
 .serve-main-subtitle {
     font-size: 1.125rem;
     color: #666;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     font-weight: 600;
 }
 
-.serve-list {
+.serve-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
     text-align: center;
 }
 
-.serve-item {
-    margin-bottom: 1.25rem;
+.serve-card {
+    background: var(--white);
+    border: 1px solid #e8ecf0;
+    border-radius: 12px;
+    padding: 2rem 1.25rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.serve-item h4 {
+.serve-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.serve-icon {
+    font-size: 2.25rem;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.serve-card h4 {
     color: var(--navy);
     font-size: 1.05rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.4rem;
     font-weight: 700;
 }
 
-.serve-item p {
+.serve-card p {
     color: #666;
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
 }
 
 /* Coverage Section */
@@ -642,17 +661,35 @@ body {
     font-weight: 600;
 }
 
-.coverage-list {
+.coverage-tags {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
 }
 
-.coverage-list p {
-    color: #555;
-    font-size: 0.95rem;
-    margin: 0;
+.coverage-tag {
+    display: inline-block;
+    background: #f0f4f8;
+    color: var(--navy);
+    padding: 0.5rem 1.1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid #dce3eb;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.coverage-tag:hover {
+    background: #e2e9f0;
+    transform: translateY(-2px);
+}
+
+.coverage-tag.highlight {
+    background: var(--navy);
+    color: var(--white);
+    border-color: var(--navy);
+    font-weight: 600;
 }
 
 .why-cta {
