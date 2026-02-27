@@ -985,6 +985,116 @@ body {
     margin-bottom: 1rem;
 }
 
+/* Location / Find Us Section */
+.location-section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2f7 100%);
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: stretch;
+    margin-top: 2rem;
+}
+
+.location-map {
+    min-height: 420px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.location-map iframe {
+    border-radius: 16px;
+}
+
+.location-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.location-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: var(--white);
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #e8ecf0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.location-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.location-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f4f8;
+    border-radius: 10px;
+}
+
+.location-text h4 {
+    color: var(--navy);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.location-text p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.location-text a {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.location-text a:hover {
+    color: var(--red);
+}
+
+.detail-note {
+    color: var(--red);
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.location-service-area {
+    background: linear-gradient(135deg, var(--navy) 0%, #1a2744 100%);
+    border-color: transparent;
+}
+
+.location-service-area .location-icon {
+    background: rgba(255,255,255,0.15);
+}
+
+.location-service-area h4 {
+    color: var(--white);
+}
+
+.location-service-area p {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.85rem;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .hero-grid,
@@ -1012,8 +1122,13 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .areas-grid {
+    .areas-grid,
+    .location-grid {
         grid-template-columns: 1fr;
+    }
+
+    .location-map {
+        min-height: 300px;
     }
 
     .carousel-btn.prev {
