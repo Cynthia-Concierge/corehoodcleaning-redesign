@@ -107,7 +107,7 @@ body {
 .nav-menu .dropdown-menu {
     display: none;
     position: absolute;
-    top: calc(100% + 0.5rem);
+    top: calc(100% + 0.25rem);
     left: 0;
     background: var(--white);
     min-width: 240px;
@@ -118,9 +118,20 @@ body {
     border: 1px solid #e8ecf0;
 }
 
-.nav-menu .dropdown:hover .dropdown-menu {
+.nav-menu .dropdown:hover .dropdown-menu,
+.nav-menu .dropdown-menu:hover {
     display: block;
     animation: fadeIn 0.2s ease-in;
+}
+
+.nav-menu .dropdown::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 0.5rem;
+    background: transparent;
 }
 
 @keyframes fadeIn {
