@@ -45,6 +45,12 @@ body {
     text-decoration: none;
 }
 
+.logo-image {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
 .logo-box {
     background: var(--navy);
     color: var(--white);
