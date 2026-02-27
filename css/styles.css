@@ -483,6 +483,10 @@ body {
     object-fit: cover;
 }
 
+.service-box-image--portrait {
+    object-position: center 25%;
+}
+
 .service-box-content {
     padding: 2.5rem;
 }
