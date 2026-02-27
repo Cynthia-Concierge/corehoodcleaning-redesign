@@ -74,11 +74,60 @@ body {
     align-items: center;
 }
 
+.nav-menu > li {
+    position: relative;
+}
+
 .nav-menu a {
     text-decoration: none;
     color: var(--navy);
     font-weight: 500;
     font-size: 0.95rem;
+}
+
+.nav-menu .dropdown {
+    position: relative;
+}
+
+.nav-menu .dropdown-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.nav-menu .dropdown-toggle::after {
+    content: '▾';
+    font-size: 0.8rem;
+}
+
+.nav-menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    min-width: 220px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    z-index: 1000;
+}
+
+.nav-menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-menu .dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: var(--navy);
+    transition: background 0.2s;
+}
+
+.nav-menu .dropdown-menu a:hover {
+    background: var(--light-gray);
 }
 
 .nav-cta {
