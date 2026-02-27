@@ -236,11 +236,41 @@
         <div class="container">
             <h2 class="section-title">Before & After Gallery</h2>
             <p class="section-subtitle">See the difference our NFPA 96 certified cleaning makes</p>
-            <div class="gallery-grid">
-                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=400" alt="Before cleaning" class="gallery-image">
-                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=400" alt="After cleaning" class="gallery-image">
-                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=400" alt="Hood interior before" class="gallery-image">
-                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=400" alt="Hood interior after" class="gallery-image">
+
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">‹</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <img src="images/before-after-1.webp" alt="Exhaust fan before and after cleaning">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/before-after-2.webp" alt="Hood interior before and after cleaning">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/before-after-3.webp" alt="Grease drain before and after cleaning">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/before-after-4.webp" alt="Ductwork before and after cleaning">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/before-after-5.webp" alt="Exhaust fan blades before and after cleaning">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="images/before-after-6.webp" alt="Hood exterior before and after cleaning">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="moveCarousel(1)">›</button>
+            </div>
+
+            <div class="carousel-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+                <span class="dot" onclick="goToSlide(3)"></span>
+                <span class="dot" onclick="goToSlide(4)"></span>
+                <span class="dot" onclick="goToSlide(5)"></span>
             </div>
         </div>
     </section>
