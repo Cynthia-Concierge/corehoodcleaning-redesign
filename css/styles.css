@@ -545,13 +545,17 @@ body {
 .why-choose {
     padding: 6rem 0;
     background: var(--white);
+}
+
+.why-choose .section-title,
+.why-choose .section-subtitle-red {
     text-align: center;
 }
 
 .section-subtitle-red {
     color: var(--primary);
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     font-weight: 700;
 }
 
@@ -562,6 +566,9 @@ body {
     align-items: start;
     max-width: 1100px;
     margin: 0 auto 4rem;
+}
+
+.why-text-block {
     text-align: left;
 }
 
@@ -569,6 +576,7 @@ body {
     font-size: 1rem;
     color: #555;
     line-height: 1.8;
+    text-align: left;
 }
 
 .why-image-block {
