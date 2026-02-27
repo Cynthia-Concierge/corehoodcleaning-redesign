@@ -273,7 +273,8 @@ body {
 }
 
 .review-card {
-    min-width: calc(33.333% - 1.5rem);
+    min-width: calc(33.333% - 1.34rem);
+    max-width: calc(33.333% - 1.34rem);
     flex-shrink: 0;
     background: var(--white);
     border: 1px solid var(--border);

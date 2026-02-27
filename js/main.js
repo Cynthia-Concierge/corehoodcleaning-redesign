@@ -62,14 +62,17 @@ const reviewsTrack = document.querySelector('.reviews-track');
 const reviewCards = document.querySelectorAll('.review-card');
 const reviewDots = document.querySelectorAll('.review-dot');
 const cardsPerPage = 3;
-const totalReviewPages = Math.ceil(reviewCards.length / cardsPerPage);
+const totalReviewPages = 2; // We have 6 cards, 3 per page = 2 pages
 
 function updateReviews() {
     if (!reviewsTrack || !reviewCards.length) return;
 
-    const cardWidth = reviewCards[0].offsetWidth;
-    const gap = 32; // 2rem gap
-    const offset = currentReviewPage * (cardWidth * cardsPerPage + gap * cardsPerPage);
+    // Calculate the offset based on how many cards have scrolled past
+    const containerWidth = reviewsTrack.parentElement.offsetWidth;
+    const totalCards = reviewCards.length;
+
+    // Move by containerWidth (which shows 3 cards)
+    const offset = currentReviewPage * containerWidth;
     reviewsTrack.style.transform = `translateX(-${offset}px)`;
 
     // Update dots
