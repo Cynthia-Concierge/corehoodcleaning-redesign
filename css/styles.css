@@ -419,7 +419,7 @@ body {
     gap: 4rem;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 6rem;
 }
 
 .why-text h3 {
@@ -448,35 +448,54 @@ body {
     display: block;
 }
 
-/* Who We Serve */
-.who-we-serve {
-    padding: 6rem 0;
-    background: var(--light-gray);
+/* Who We Serve - Inline */
+.who-we-serve-inline {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 4rem;
+    border-top: 2px solid var(--border);
+}
+
+.serve-title {
+    font-size: 1.75rem;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.serve-subtitle {
+    font-size: 1.25rem;
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 600;
 }
 
 .serve-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-top: 3rem;
 }
 
 .serve-card {
-    background: var(--white);
+    background: var(--light-gray);
     padding: 2rem;
     border-radius: 8px;
-    border: 1px solid var(--border);
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 3px solid var(--primary);
+    transition: all 0.3s;
 }
 
 .serve-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    background: var(--white);
+    border-left-width: 5px;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.serve-card h3 {
+.serve-card h4 {
     color: var(--navy);
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     margin-bottom: 0.75rem;
     font-weight: 700;
 }
@@ -797,10 +816,7 @@ body {
     }
 
     .cta-grid,
-    .why-grid {
-        grid-template-columns: 1fr;
-    }
-
+    .why-grid,
     .serve-grid {
         grid-template-columns: repeat(2, 1fr);
     }
