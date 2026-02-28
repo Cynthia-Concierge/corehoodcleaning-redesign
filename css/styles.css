@@ -46,7 +46,7 @@ body {
 }
 
 .logo-image {
-    height: 50px;
+    height: 70px;
     width: auto;
     display: block;
 }
@@ -276,24 +276,26 @@ body {
     transform: translateX(-50%);
     background: var(--navy);
     color: var(--white);
-    padding: 1.5rem 2.5rem;
+    padding: 1rem 2rem;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-    min-width: 280px;
+    min-width: 300px;
+    white-space: nowrap;
 }
 
 .image-cta p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
 .image-cta .phone {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 800;
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     letter-spacing: 0.5px;
+    white-space: nowrap;
 }
 
 /* CTA Buttons Section */
