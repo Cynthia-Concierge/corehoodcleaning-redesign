@@ -351,12 +351,12 @@ body {
 .reviews-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .review-card {
-    min-width: calc(33.333% - 1.34rem);
-    max-width: calc(33.333% - 1.34rem);
+    min-width: calc(33.333% - 0.67rem);
+    max-width: calc(33.333% - 0.67rem);
     flex-shrink: 0;
     background: var(--white);
     border: 1px solid var(--border);
