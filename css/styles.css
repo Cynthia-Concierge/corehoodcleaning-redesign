@@ -361,20 +361,20 @@ body {
     background: var(--white);
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 1.5rem;
+    padding: 1.25rem 1.25rem 0.75rem 1.25rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .stars {
     color: #ffa500;
     font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .review-text {
     color: #555;
-    line-height: 1.6;
-    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 0.4rem;
     font-size: 0.95rem;
     font-style: italic;
 }
@@ -385,14 +385,14 @@ body {
     font-weight: 600;
     font-size: 0.9rem;
     display: inline-block;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .reviewer strong {
     color: var(--navy);
     font-size: 1rem;
     display: block;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
 }
 
 .reviewer p {
