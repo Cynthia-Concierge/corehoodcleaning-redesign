@@ -99,60 +99,60 @@
                 <button class="review-nav prev" onclick="moveReviews(-1)">‹</button>
                 <div class="reviews-carousel">
                     <div class="reviews-track">
-                        <div class="review-card">
+                        <div class="review-card" data-full-review="Highly recommend Core Hood Cleaning & Fire Prevention! Their team is professional, thorough, and extremely reliable. They do an outstanding job cleaning our kitchen hood system and made sure everything met fire safety standards. Communication was great from start to finish! We use core for all our restaurants and will continue to do so.">
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                             <p class="review-text">Highly recommend Core Hood Cleaning & Fire Prevention! Their team is professional, thorough, and extremely reliable. They do an outstanding job...</p>
-                            <a href="#" class="read-more">Read more</a>
+                            <a href="#" class="read-more" onclick="openReviewModal(this); return false;">Read more</a>
                             <div class="reviewer">
                                 <strong>Daniela D.</strong>
                                 <p>Head of Operations</p>
                             </div>
                         </div>
 
-                        <div class="review-card">
+                        <div class="review-card" data-full-review="These guys are great! Genuine guys to talk to and they know their business really well. They were very clear and concise and answered all the questions that I had. Very happy with their services. I have already recommended them to other people in the industry. They're licensed insured, which is stated on their seal sticker when they do your services, which is exactly what the fire marshals are looking for.">
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                             <p class="review-text">These guys are great! Genuine guys to talk to and know their business really well. They were very clear and concise and answered all the question...</p>
-                            <a href="#" class="read-more">Read more</a>
+                            <a href="#" class="read-more" onclick="openReviewModal(this); return false;">Read more</a>
                             <div class="reviewer">
                                 <strong>Crystal R.</strong>
                                 <p>Restaurant Owner</p>
                             </div>
                         </div>
 
-                        <div class="review-card">
+                        <div class="review-card" data-full-review="Great small company, I manage a small restaurant in Coronado. We were working with a bigger hood cleaning company but their service became unsatisfactory. Luckily Chase showed up the same week we started looking for a new hood cleaning service company and they did a great job.">
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                             <p class="review-text">Great small company, I manage a small restaurant in Coronado. We were working with a bigger hood cleaning company but their service became...</p>
-                            <a href="#" class="read-more">Read more</a>
+                            <a href="#" class="read-more" onclick="openReviewModal(this); return false;">Read more</a>
                             <div class="reviewer">
                                 <strong>Sergio B.</strong>
                                 <p>General Manager</p>
                             </div>
                         </div>
 
-                        <div class="review-card">
+                        <div class="review-card" data-full-review="Chase was a breath of fresh air in an industry that seems to be burdened with integrity issues, and dealing with one of the most complex / important systems for a business owner to keep a restaurant functioning at its best. He went above and beyond to make sure we had all the information we needed and felt comfortable about our decision. I can tell this guy cares about the people and businesses he serves. A no pressure sales transaction is hard to find. I believe we might have found a real diamond in the rough in an industry that can be hard to navigate.">
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                             <p class="review-text">Chase was a breath of fresh air in an industry that seems to be burdened with integrity issues, and dealing with one of the most complex / important systems for a business owner to keep a restaurant functioning at its best. He went above and beyond to make sure we had all the information we needed and felt comfortable about our decision. I can tell this guy cares about the people and businesses he serves. A no pressure sales transaction is hard to find. I believe we might have found a real diamond in the rough in an industry that can be hard to navigate.</p>
-                            <a href="#" class="read-more">Read more</a>
+                            <a href="#" class="read-more" onclick="openReviewModal(this); return false;">Read more</a>
                             <div class="reviewer">
                                 <strong>Cory O.</strong>
                                 <p>Property Manager</p>
                             </div>
                         </div>
 
-                        <div class="review-card">
+                        <div class="review-card" data-full-review="We hired Core Service Company to clean the kitchen hood at our restaurant, and I couldn't be happier with the results. From start to finish, they were professional, punctual, and thorough. Chase is so professional! They arrived on time, explained exactly what they were going to do, and made sure everything was protected before they started. The cleaning was meticulous — our hood looks brand new, and the airflow has noticeably improved. They even provided before-and-after photos so we could see the difference. Pricing was fair for the quality of service, and they left the kitchen spotless after finishing. I really appreciate their attention to detail. Chase is the best!!! 100/10">
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                             <p class="review-text">We hired Core Service Company to clean the kitchen hood at our restaurant, and I couldn't be happier with the results. From start to finish, they were professional, punctual, and thorough. Chase is so professional! They arrived on time, explained exactly what they were going to do, and made sure everything was protected before they started. The cleaning was meticulous — our hood looks brand new, and the airflow has noticeably improved. They even provided before-and-after photos so we could see the difference. Pricing was fair for the quality of service, and they left the kitchen spotless after finishing. I really appreciate their attention to detail. Chase is the best!!! 100/10</p>
-                            <a href="#" class="read-more">Read more</a>
+                            <a href="#" class="read-more" onclick="openReviewModal(this); return false;">Read more</a>
                             <div class="reviewer">
                                 <strong>Dream P.</strong>
                                 <p>Multi-Unit Operator</p>
                             </div>
                         </div>
 
-                        <div class="review-card">
+                        <div class="review-card" data-full-review="We contracted with Core recently and we are very pleased with the results we have seen so far">
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                             <p class="review-text">We contracted with Core recently and we are very pleased with the results we have seen so far</p>
-                            <a href="#" class="read-more">Read more</a>
+                            <a href="#" class="read-more" onclick="openReviewModal(this); return false;">Read more</a>
                             <div class="reviewer">
                                 <strong>Lyle S.</strong>
                                 <p>Multi-Unit Owner</p>
@@ -644,6 +644,44 @@
         ]
       }
     }
+    </script>
+
+    <!-- Review Modal -->
+    <div id="reviewModal" class="review-modal">
+        <div class="review-modal-content">
+            <button class="review-modal-close" onclick="closeReviewModal()">×</button>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-modal-text" id="modalReviewText"></p>
+            <div class="review-modal-reviewer">
+                <strong id="modalReviewerName"></strong>
+                <p id="modalReviewerTitle"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function openReviewModal(element) {
+        const card = element.closest('.review-card');
+        const fullReview = card.getAttribute('data-full-review');
+        const reviewerName = card.querySelector('.reviewer strong').textContent;
+        const reviewerTitle = card.querySelector('.reviewer p').textContent;
+
+        document.getElementById('modalReviewText').textContent = fullReview;
+        document.getElementById('modalReviewerName').textContent = reviewerName;
+        document.getElementById('modalReviewerTitle').textContent = reviewerTitle;
+        document.getElementById('reviewModal').classList.add('active');
+    }
+
+    function closeReviewModal() {
+        document.getElementById('reviewModal').classList.remove('active');
+    }
+
+    // Close modal when clicking outside
+    document.getElementById('reviewModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeReviewModal();
+        }
+    });
     </script>
 </body>
 </html>
