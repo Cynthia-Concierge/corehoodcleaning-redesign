@@ -1377,3 +1377,45 @@ body {
     font-size: 0.95rem;
     margin: 0;
 }
+
+/* Location Links Grid */
+.location-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2.5rem 0;
+}
+
+.location-link {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    background: white;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--navy);
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+}
+
+.location-link:hover {
+    background: var(--navy);
+    color: white;
+    border-color: var(--navy);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 768px) {
+    .location-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .location-link {
+        padding: 1rem;
+        font-size: 0.95rem;
+    }
+}
