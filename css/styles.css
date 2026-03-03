@@ -1401,13 +1401,16 @@ body {
 /* Location Links Grid */
 .location-links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
     margin: 2.5rem 0;
 }
 
 .location-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
     padding: 1.25rem 1.5rem;
     background: white;
     border: 2px solid var(--border);
