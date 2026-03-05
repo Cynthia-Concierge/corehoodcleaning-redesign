@@ -9,36 +9,8 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="logo">
-                    <img src="images/core-logo.png" alt="Core Services - Hood Cleaning & Fire Prevention" class="logo-image">
-                </a>
-                <ul class="nav-menu">
-                    <li class="dropdown">
-                        <span class="dropdown-toggle">Services</span>
-                        <div class="dropdown-menu">
-                            <a href="hood-cleaning-service.html">Hood Cleaning Service</a>
-                            <a href="filter-exchange-program.html">Filter Exchange Program</a>
-                            <a href="nfpa-96-inspection.html">NFPA 96 Inspection</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <span class="dropdown-toggle">Service Areas</span>
-                        <div class="dropdown-menu">
-                            <a href="locations/downtown-san-diego.html">Downtown San Diego</a>
-                            <a href="locations/pacific-beach.html">Pacific Beach</a>
-                            <a href="locations/la-jolla.html">La Jolla</a>
-                        </div>
-                    </li>
-                    <li><a href="index.html#about">About Us</a></li>
-                    <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning">Contact Us</a></li>
-                    <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning" class="nav-cta">Book a Quote</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="nav-container"></div>
+    <script src="js/nav.js"></script>
 
     <section class="hero">
         <div class="container">
@@ -51,11 +23,11 @@
                 </div>
 
                 <div class="hero-image">
-                    <img src="images/commercial-kitchen-hero.jpg" alt="Professional Commercial Kitchen Hood Cleaning" />
-                    <div class="image-cta">
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=1200&q=80" alt="Professional Commercial Kitchen Hood Cleaning" />
+                    <a href="tel:+18583612570" class="image-cta">
                         <p>Click Here to Call Us</p>
                         <p class="phone">(858) 361-2570</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -191,7 +163,7 @@
                         <li>Proper clearances to combustible materials</li>
                         <li>Working fire suppression system with current inspection tag</li>
                     </ul>
-                    <p><strong>Consequences of Non-Compliance:</strong> Failed health inspections can result in red tags (immediate closure), fines ranging from $500-$2,000+, insurance claim denials if a fire occurs, and in extreme cases, criminal liability if a fire causes injury.</p>
+                    <p><strong>Consequences of Non-Compliance:</strong> Failed health inspections can result in red tags (immediate closure), significant fines, insurance claim denials if a fire occurs, and in extreme cases, criminal liability if a fire causes injury.</p>
                     <p>Core Hood Cleaning provides all documentation needed for San Diego health inspections. Our certificates are accepted by all San Diego County health departments, fire marshals, and insurance companies.</p>
                 </div>
             </section>
@@ -216,13 +188,13 @@
 
     <section class="services-detailed">
         <div class="container">
-            <h2 class="section-title">Hood Cleaning Pricing in San Diego</h2>
-            <p class="section-subtitle">Pricing varies based on hood size, ductwork length, exhaust fan access, and cleaning frequency. Here's what factors affect your quote:</p>
+            <h2 class="section-title">What Affects Your Hood Cleaning Service</h2>
+            <p class="section-subtitle">Every kitchen is different. Here's what we assess during your free walkthrough:</p>
 
             <div style="max-width: 900px; margin: 3rem auto;">
                 <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--white); border-left: 4px solid var(--primary); border-radius: 8px;">
                     <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Hood Size & Configuration</h4>
-                    <p style="margin: 0; color: #555;">Larger hoods with multiple sections require more time and materials. Island hoods (with ductwork on both sides) cost more than wall-mounted hoods. Multiple hoods in one kitchen may qualify for volume discounts.</p>
+                    <p style="margin: 0; color: #555;">Larger hoods with multiple sections require more time and materials. Island hoods (with ductwork on both sides) differ from wall-mounted hoods. Multiple hoods in one kitchen may qualify for volume options.</p>
                 </div>
                 <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--white); border-left: 4px solid var(--primary); border-radius: 8px;">
                     <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Ductwork Length & Access</h4>
@@ -230,18 +202,18 @@
                 </div>
                 <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--white); border-left: 4px solid var(--primary); border-radius: 8px;">
                     <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Level of Grease Buildup</h4>
-                    <p style="margin: 0; color: #555;">First-time cleanings or severely neglected systems require extra time. Regular customers on a maintenance schedule typically pay less per service.</p>
+                    <p style="margin: 0; color: #555;">First-time cleanings or severely neglected systems require extra time. Regular customers on a maintenance schedule typically have more straightforward service.</p>
                 </div>
                 <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--white); border-left: 4px solid var(--primary); border-radius: 8px;">
-                    <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Service Frequency Discounts</h4>
-                    <p style="margin: 0; color: #555;">Monthly customers receive the best per-service rates. Quarterly and semi-annual customers receive moderate discounts. One-time cleanings are priced higher due to unpredictable conditions.</p>
+                    <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Service Frequency</h4>
+                    <p style="margin: 0; color: #555;">Monthly, quarterly, and semi-annual schedules are available. We'll recommend a frequency based on your cooking volume and NFPA 96 requirements during your free walkthrough.</p>
                 </div>
             </div>
 
             <div style="text-align: center; margin: 3rem 0;">
-                <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Most San Diego restaurants pay between $250-$850 per service</strong></p>
-                <p style="color: #555; margin-bottom: 2rem;">The only way to get an accurate quote is a free walkthrough. We'll assess your system, measure your ductwork, and provide a firm price quote—no surprises, no upsells.</p>
-                <a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning" class="btn btn-primary btn-large">Click Here to Schedule Your Free Quote</a>
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Get a custom plan for your kitchen</strong></p>
+                <p style="color: #555; margin-bottom: 2rem;">We'll schedule a free walkthrough, assess your system, measure your ductwork, and put together a plan that fits your operation—no surprises, no upsells.</p>
+                <a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning" class="btn btn-primary btn-large">Click Here to Schedule Your Free Walkthrough</a>
             </div>
         </div>
     </section>
@@ -267,7 +239,7 @@
                 </div>
 
                 <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--white); border-radius: 8px;">
-                    <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Can I clean my own hood to save money?</h4>
+                    <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Can I clean my own hood?</h4>
                     <p style="margin: 0; color: #555;">You can clean the visible hood surfaces yourself, but NFPA 96 requires professional cleaning of the entire system (including inaccessible ductwork and rooftop fan). DIY cleaning won't satisfy fire marshal or insurance requirements, and you won't have the certificate of performance needed for compliance.</p>
                 </div>
 
@@ -298,7 +270,7 @@
 
                 <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--white); border-radius: 8px;">
                     <h4 style="color: var(--navy); margin-bottom: 0.5rem;">How do I get started?</h4>
-                    <p style="margin: 0; color: #555;">Call us at (858) 361-2570 or book online. We'll schedule a free walkthrough at your convenience, assess your system, and provide a firm price quote. If you approve, we'll schedule your first cleaning and get you set up on our automated reminder system so you never miss a required service date.</p>
+                    <p style="margin: 0; color: #555;">Call us at (858) 361-2570 or book online. We'll schedule a free walkthrough at your convenience, assess your system, and put together a plan for you. If you approve, we'll schedule your first cleaning and get you set up on our automated reminder system so you never miss a required service date.</p>
                 </div>
             </div>
         </div>
@@ -356,56 +328,9 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <div class="logo-box">CORE</div>
-                        <p>SERVICES</p>
-                    </div>
-                    <p>Providing Hood Cleaning Services Throughout All of San Diego County</p>
-                    <div class="social-links">
-                        <a href="#" class="social-icon">f</a>
-                        <a href="#" class="social-icon">in</a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>SERVICES</h4>
-                    <ul>
-                        <li><a href="hood-cleaning-service.html">Hood Cleaning</a></li>
-                        <li><a href="filter-exchange-program.html">Filter Exchange Program</a></li>
-                        <li><a href="#services">NFPA 96 Compliance</a></li>
-                        <li><a href="#services">Emergency Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>ABOUT</h4>
-                    <ul>
-                        <li><a href="index.html#about">Why Choose Core?</a></li>
-                        <li><a href="index.html#services">Our Process</a></li>
-                        <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning">Service Areas</a></li>
-                        <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>LOCATIONS</h4>
-                    <ul>
-                        <li>San Diego - (858) 361-2570</li>
-                        <li>North County Coastal</li>
-                        <li>Central & Downtown SD</li>
-                        <li>East County</li>
-                        <li>South Bay</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Core Hood Cleaning is NFPA 96 Certified and Insured. We serve restaurants, hotels, schools, hospitals, food trucks, and any commercial kitchen throughout San Diego County. All hood cleaning services include before/after photo documentation and a certificate of performance for your records.</p>
-                <p>&copy; 2026 Core Hood Cleaning. All Rights Reserved. | Licensed & Insured | NFPA 96 Certified</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
 
+    <script src="js/footer.js"></script>
     <script src="js/main.js"></script>
     <script src="js/tracking.js"></script>
 
@@ -433,8 +358,7 @@
       "description": "Professional commercial kitchen hood cleaning service in San Diego. NFPA 96 certified, full exhaust system cleaning including hoods, ductwork, and fans.",
       "offers": {
         "@type": "Offer",
-        "availability": "https://schema.org/InStock",
-        "priceRange": "$250-$850"
+        "availability": "https://schema.org/InStock"
       }
     }
     </script>

@@ -9,37 +9,8 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="../index.html" class="logo">
-                    <img src="../images/core-logo.png" alt="Core Services - Hood Cleaning & Fire Prevention" class="logo-image">
-                </a>
-                <ul class="nav-menu">
-                    <li class="dropdown">
-                        <span class="dropdown-toggle">Services</span>
-                        <div class="dropdown-menu">
-                            <a href="../hood-cleaning-service.html">Hood Cleaning Service</a>
-                            <a href="../filter-exchange-program.html">Filter Exchange Program</a>
-                            <a href="../nfpa-96-inspection.html">NFPA 96 Inspection</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <span class="dropdown-toggle">Service Areas</span>
-                        <div class="dropdown-menu">
-                            <a href="downtown-san-diego.html">Downtown San Diego</a>
-                            <a href="pacific-beach.html">Pacific Beach</a>
-                            <a href="la-jolla.html">La Jolla</a>
-                            <a href="mission-valley.html">Mission Valley</a>
-                        </div>
-                    </li>
-                    <li><a href="../index.html#about">About Us</a></li>
-                    <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning">Contact Us</a></li>
-                    <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning" class="nav-cta">Book a Quote</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="nav-container"></div>
+    <script src="../js/nav.js"></script>
 
     <section class="hero">
         <div class="container">
@@ -52,11 +23,11 @@
                 </div>
 
                 <div class="hero-image">
-                    <img src="../images/commercial-kitchen-hero.jpg" alt="Mission Valley Hood Cleaning Service" />
-                    <div class="image-cta">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80" alt="Mission Valley Hood Cleaning Service" />
+                    <a href="tel:+18583612570" class="image-cta">
                         <p>Click Here to Call Us</p>
                         <p class="phone">(858) 361-2570</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -204,12 +175,12 @@
 
                 <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--white); border-radius: 8px;">
                     <h4 style="color: var(--navy); margin-bottom: 0.5rem;">How much does hood cleaning cost for Mission Valley hotels?</h4>
-                    <p style="margin: 0; color: #555;">Hotel kitchens typically range $400-$1,200 per service depending on the number of hoods, ductwork complexity, and whether you have banquet kitchen hoods separate from restaurant hoods. The only way to get an accurate quote is a free walkthrough. Call (858) 361-2570 to schedule.</p>
+                    <p style="margin: 0; color: #555;">Hotel kitchens vary by number of hoods, ductwork complexity, and whether you have banquet kitchen hoods separate from restaurant hoods. We'll assess your setup during a free walkthrough. Call (858) 361-2570 to schedule.</p>
                 </div>
 
                 <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--white); border-radius: 8px;">
-                    <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Do you offer fleet pricing for multiple Mission Valley locations?</h4>
-                    <p style="margin: 0; color: #555;">Absolutely. Property management companies, hotel groups, and corporate clients with multiple Mission Valley locations receive volume discounts. We can schedule all locations on the same service cycle for consistency and coordinate directly with your corporate facilities team.</p>
+                    <h4 style="color: var(--navy); margin-bottom: 0.5rem;">Do you serve multiple Mission Valley locations?</h4>
+                    <p style="margin: 0; color: #555;">Absolutely. Property management companies, hotel groups, and corporate clients with multiple Mission Valley locations can schedule all locations on the same service cycle for consistency. We coordinate directly with your corporate facilities team.</p>
                 </div>
 
                 <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--white); border-radius: 8px;">
@@ -234,47 +205,9 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <div class="logo-box">CORE</div>
-                        <p>SERVICES</p>
-                    </div>
-                    <p>Providing Hood Cleaning Services Throughout All of San Diego County</p>
-                </div>
-                <div class="footer-section">
-                    <h4>SERVICES</h4>
-                    <ul>
-                        <li><a href="../hood-cleaning-service.html">Hood Cleaning</a></li>
-                        <li><a href="../filter-exchange-program.html">Filter Exchange Program</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>LOCATIONS</h4>
-                    <ul>
-                        <li><a href="downtown-san-diego.html">Downtown San Diego</a></li>
-                        <li><a href="pacific-beach.html">Pacific Beach</a></li>
-                        <li><a href="la-jolla.html">La Jolla</a></li>
-                        <li><a href="mission-valley.html">Mission Valley</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>CONTACT</h4>
-                    <ul>
-                        <li>San Diego - (858) 361-2570</li>
-                        <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning">Book Online</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Core Hood Cleaning is NFPA 96 Certified and Insured. Serving Mission Valley hotels, malls, and commercial kitchens with professional hood cleaning services.</p>
-                <p>&copy; 2026 Core Hood Cleaning. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
 
+    <script src="../js/footer.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/tracking.js"></script>
 
@@ -288,7 +221,6 @@
       "@id": "https://corehoodcleaning.com/locations/mission-valley",
       "url": "https://corehoodcleaning.com/locations/mission-valley",
       "telephone": "+18583612570",
-      "priceRange": "$$-$$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Mission Valley",

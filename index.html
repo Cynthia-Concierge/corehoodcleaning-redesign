@@ -9,29 +9,8 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="index.html" class="logo">
-                    <img src="images/core-logo.png" alt="Core Services - Hood Cleaning & Fire Prevention" class="logo-image">
-                </a>
-                <ul class="nav-menu">
-                    <li class="dropdown">
-                        <span class="dropdown-toggle">Services</span>
-                        <div class="dropdown-menu">
-                            <a href="hood-cleaning-service.html">Hood Cleaning Service</a>
-                            <a href="filter-exchange-program.html">Filter Exchange Program</a>
-                            <a href="nfpa-96-inspection.html">NFPA 96 Inspection</a>
-                        </div>
-                    </li>
-                    <li><a href="#service-areas">Service Areas</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning">Contact Us</a></li>
-                    <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning" class="nav-cta">Book a Quote</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="nav-container"></div>
+    <script src="js/nav.js"></script>
 
     <section class="hero">
         <div class="container">
@@ -63,11 +42,11 @@
                 </div>
 
                 <div class="hero-image">
-                    <img src="images/hero-background.png" alt="Professional Commercial Kitchen" />
-                    <div class="image-cta">
+                    <img src="images/hero-commercial-kitchen.png" alt="Professional Commercial Kitchen" />
+                    <a href="tel:+18583612570" class="image-cta">
                         <p>Click Here to Call Us</p>
                         <p class="phone">(858) 361-2570</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -241,7 +220,7 @@
                     <p style="margin-top: 1.5rem;"><strong>What Makes Us Different:</strong> We don't just clean hoods - we build relationships. Every service includes before/after photo documentation, digital portal access, automated service reminders, and a 100% satisfaction guarantee. We've helped hundreds of San Diego restaurants stay compliant, pass health inspections, and avoid costly fire hazards.</p>
                 </div>
                 <div class="why-image-block">
-                    <img src="images/team-3.jpg" alt="Core Services technician professionally cleaning commercial kitchen hood system">
+                    <img src="images/hood-cleaning-action.png" alt="Core Services technician professionally cleaning commercial kitchen hood system">
                 </div>
             </div>
 
@@ -250,35 +229,41 @@
                 <p class="serve-main-subtitle">Commercial Hood Cleaning Throughout San Diego County</p>
 
                 <div class="serve-grid">
-                    <div class="serve-card">
-                        <span class="serve-icon">🍽️</span>
-                        <h4>Restaurants</h4>
-                        <p>From downtown to Oceanside — restaurants of all sizes across San Diego County</p>
+                    <div class="serve-card serve-card--restaurants">
+                        <div class="serve-card-content">
+                            <h4>Restaurants</h4>
+                            <p>From downtown to Oceanside — restaurants of all sizes across San Diego County</p>
+                        </div>
                     </div>
-                    <div class="serve-card">
-                        <span class="serve-icon">🍺</span>
-                        <h4>Bars & Breweries</h4>
-                        <p>Craft breweries and bars throughout San Diego County</p>
+                    <div class="serve-card serve-card--bars">
+                        <div class="serve-card-content">
+                            <h4>Bars & Breweries</h4>
+                            <p>Craft breweries and bars throughout San Diego County</p>
+                        </div>
                     </div>
-                    <div class="serve-card">
-                        <span class="serve-icon">🏥</span>
-                        <h4>Schools & Hospitals</h4>
-                        <p>Institutional kitchens that need reliable hood cleaning</p>
+                    <div class="serve-card serve-card--schools">
+                        <div class="serve-card-content">
+                            <h4>Schools & Hospitals</h4>
+                            <p>Institutional kitchens that need reliable hood cleaning</p>
+                        </div>
                     </div>
-                    <div class="serve-card">
-                        <span class="serve-icon">🏨</span>
-                        <h4>Hotels & Resorts</h4>
-                        <p>San Diego's hospitality industry trusts Core for kitchen maintenance</p>
+                    <div class="serve-card serve-card--hotels">
+                        <div class="serve-card-content">
+                            <h4>Hotels & Resorts</h4>
+                            <p>San Diego's hospitality industry trusts Core for kitchen maintenance</p>
+                        </div>
                     </div>
-                    <div class="serve-card">
-                        <span class="serve-icon">🏭</span>
-                        <h4>Commercial Commissaries</h4>
-                        <p>Large-scale food production facilities in San Diego</p>
+                    <div class="serve-card serve-card--commissaries">
+                        <div class="serve-card-content">
+                            <h4>Commercial Commissaries</h4>
+                            <p>Large-scale food production facilities in San Diego</p>
+                        </div>
                     </div>
-                    <div class="serve-card">
-                        <span class="serve-icon">🚚</span>
-                        <h4>Food Trucks</h4>
-                        <p>Mobile food vendors operating throughout San Diego</p>
+                    <div class="serve-card serve-card--foodtrucks">
+                        <div class="serve-card-content">
+                            <h4>Food Trucks</h4>
+                            <p>Mobile food vendors operating throughout San Diego</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -313,6 +298,10 @@
             </div>
 
             <p style="text-align: center; margin-top: 2rem; color: #666;">Can't find your location? We serve all of San Diego County. <a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning" style="color: var(--navy); font-weight: 600;">Contact us</a> to schedule service in your area.</p>
+
+            <div class="cta-between-sections">
+                <a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning" class="btn btn-primary">Schedule Service in Your Area</a>
+            </div>
         </div>
     </section>
 
@@ -351,6 +340,11 @@
                 <span class="dot" onclick="goToSlide(2)"></span>
                 <span class="dot" onclick="goToSlide(3)"></span>
                 <span class="dot" onclick="goToSlide(4)"></span>
+            </div>
+
+            <div class="cta-between-before-after">
+                <a href="tel:+18583612570" class="btn btn-navy">Call Now</a>
+                <a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning" class="btn btn-primary">Schedule a Free Quote</a>
             </div>
         </div>
     </section>
@@ -392,7 +386,7 @@
             <div class="location-grid">
                 <div class="location-map">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.8!2d-117.2!3d32.88!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDUyJzQ4LjAiTiAxMTfCsDEyJzAwLjAiVw!5e0!3m2!1sen!2sus!4v1700000000000"
+                        src="https://maps.google.com/maps?q=5284+Eastgate+Mall,+San+Diego,+CA+92121&output=embed&z=11"
                         width="100%"
                         height="100%"
                         style="border:0; border-radius: 16px;"
@@ -442,57 +436,9 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="images/eagle-logo.png" alt="Core Hood Cleaning Logo" style="max-width: 180px; margin-bottom: 1rem;">
-                    </div>
-                    <p>Providing Hood Cleaning Services Throughout All of San Diego County</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/coreservicesofficial/" target="_blank" rel="noopener" class="social-icon" aria-label="Follow us on Instagram">
-                            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>SERVICES</h4>
-                    <ul>
-                        <li><a href="hood-cleaning-service.html">Hood Cleaning</a></li>
-                        <li><a href="filter-exchange-program.html">Filter Exchange Program</a></li>
-                        <li><a href="#services">NFPA 96 Compliance</a></li>
-                        <li><a href="#services">Emergency Service</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>ABOUT</h4>
-                    <ul>
-                        <li><a href="#about">Why Choose Core?</a></li>
-                        <li><a href="#services">Our Process</a></li>
-                        <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning">Service Areas</a></li>
-                        <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>CONTACT</h4>
-                    <ul>
-                        <li><a href="tel:8583612570" style="color: white; font-weight: 600;">(858) 361-2570</a></li>
-                        <li><a href="mailto:chase@corehoodcleaning.com">chase@corehoodcleaning.com</a></li>
-                        <li><a href="#service-areas">View All Service Areas</a></li>
-                        <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning">Book Online</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Core Hood Cleaning is NFPA 96 Certified and Insured. We serve restaurants, hotels, schools, hospitals, food trucks, and any commercial kitchen throughout San Diego County. All hood cleaning services include before/after photo documentation and a certificate of performance for your records.</p>
-                <p>&copy; 2026 Core Hood Cleaning. All Rights Reserved. | Licensed & Insured | NFPA 96 Certified</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
 
+    <script src="js/footer.js"></script>
     <script src="js/main.js"></script>
     <script src="js/tracking.js"></script>
 
@@ -506,7 +452,6 @@
       "@id": "https://corehoodcleaning.com",
       "url": "https://corehoodcleaning.com",
       "telephone": "+18583612570",
-      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "San Diego",

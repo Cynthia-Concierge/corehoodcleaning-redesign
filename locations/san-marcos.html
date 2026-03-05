@@ -9,37 +9,8 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="../index.html" class="logo">
-                    <img src="../images/core-logo.png" alt="Core Services - Hood Cleaning & Fire Prevention" class="logo-image">
-                </a>
-                <ul class="nav-menu">
-                    <li class="dropdown">
-                        <span class="dropdown-toggle">Services</span>
-                        <div class="dropdown-menu">
-                            <a href="../hood-cleaning-service.html">Hood Cleaning Service</a>
-                            <a href="../filter-exchange-program.html">Filter Exchange Program</a>
-                            <a href="../nfpa-96-inspection.html">NFPA 96 Inspection</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <span class="dropdown-toggle">Service Areas</span>
-                        <div class="dropdown-menu">
-                            <a href="../index.html#service-areas">All Locations</a>
-                            <a href="downtown-san-diego.html">Downtown San Diego</a>
-                            <a href="carlsbad.html">Carlsbad</a>
-                            <a href="oceanside.html">Oceanside</a>
-                        </div>
-                    </li>
-                    <li><a href="../index.html#about">About Us</a></li>
-                    <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning">Contact Us</a></li>
-                    <li><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning" class="nav-cta">Book a Quote</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="nav-container"></div>
+    <script src="../js/nav.js"></script>
 
     <section class="hero">
         <div class="container">
@@ -52,11 +23,11 @@
                 </div>
 
                 <div class="hero-image">
-                    <img src="../images/commercial-kitchen-hero.jpg" alt="San Marcos Hood Cleaning Service" />
-                    <div class="image-cta">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80" alt="San Marcos Hood Cleaning Service" />
+                    <a href="tel:+18583612570" class="image-cta">
                         <p>Click Here to Call Us</p>
                         <p class="phone">(858) 361-2570</p>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -129,35 +100,9 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h3>Core Hood Cleaning</h3>
-                    <p>NFPA 96 Certified Commercial Kitchen Hood Cleaning</p>
-                    <p>Serving San Marcos & San Diego County</p>
-                </div>
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../hood-cleaning-service.html">Hood Cleaning Service</a></li>
-                        <li><a href="../filter-exchange-program.html">Filter Exchange</a></li>
-                        <li><a href="../index.html#service-areas">Service Areas</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <p>Phone: (858) 361-2570</p>
-                    <p><a href="https://api.leadconnectorhq.com/widget/bookings/corehoodcleaning">Book Online</a></p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Core Hood Cleaning. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-container"></div>
 
+    <script src="../js/footer.js"></script>
     <script src="../js/tracking.js"></script>
 
     <script type="application/ld+json">
@@ -169,7 +114,6 @@
       "@id": "https://corehoodcleaning.com/locations/san-marcos",
       "url": "https://corehoodcleaning.com/locations/san-marcos.html",
       "telephone": "+18583612570",
-      "priceRange": "3115508",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "San Marcos",
